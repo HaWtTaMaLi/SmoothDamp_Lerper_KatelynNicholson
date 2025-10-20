@@ -602,11 +602,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc76c0771e40364da6422ed77245574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectOne: {fileID: 0}
-  objectTwo: {fileID: 0}
+  objectOne: {fileID: 1851217758}
+  objectTwo: {fileID: 1715347133}
   moveDuration: 3
   smoothTime: 1
-  timer: 0
+  timer: 1
 --- !u!65 &1715347130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -728,11 +728,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc76c0771e40364da6422ed77245574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectOne: {fileID: 0}
-  objectTwo: {fileID: 0}
+  objectOne: {fileID: 1851217758}
+  objectTwo: {fileID: 1715347133}
   moveDuration: 3
   smoothTime: 1
-  timer: 0
+  timer: 1
 --- !u!65 &1851217755
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class ObjectMovement : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
     public float moveDuration = 3f; //how long lerp movement lasts
-    public float smoothTime = 0.5f; //how smooth feels
+    public float smoothTime = .5f; //how smooth feels
     public float timer = 0f;
 
 
@@ -43,8 +43,13 @@ public class ObjectMovement : MonoBehaviour
         {
             timer = 0f;
             (startPosOne, endPosOne) = (endPosOne, startPosOne);
-            (startPosTwo, endPosTwo) = (endPosTwo, startPosTwo);
+        }
 
+        float distance = Vector3.Distance(objectTwo.position, endPosTwo);
+
+        if (distance < 0.5f)
+        {
+            (startPosTwo, endPosTwo) = (endPosTwo, startPosTwo);
             velocity = Vector3.zero;
         }
     }
